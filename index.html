@@ -113,13 +113,39 @@
     </header>
     <main>
         <div id="main-content">
-
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/img/Body-Mist-Banners-1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Attire_2_benner.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/Motiwala-Premium-Attar.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/8.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </main>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>

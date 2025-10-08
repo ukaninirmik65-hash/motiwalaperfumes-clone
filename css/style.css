@@ -220,3 +220,49 @@ svg.modal__toggle-open.icon-search.icon {
 .modal__toggle-close {
   display: none;
 }
+
+/* ==================================================
+                   hero-slider-section
+   ================================================== */
+
+/* Ensure full height works correctly */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main slider container */
+#main-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Swiper slider styling */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  filter: brightness(1);
+}
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
