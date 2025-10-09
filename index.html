@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -22,7 +21,7 @@
                 fill="currentColor" />
         </symbol>
         <!-- Any other icons like icon-reset, icon-close can go here too -->
-        <symbol id="icon-cart" viewBox="0 0 40## 40" fill="none">
+        <symbol id="icon-cart" viewBox="0 0 40 40" fill="none">
             <path
                 d="m15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33l-.78-11.61zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1 -9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z"
                 fill="currentColor" fill-rule="evenodd"></path>
@@ -111,41 +110,44 @@
             </details-modal>
         </div>
     </header>
+
     <main>
         <div id="main-content">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
                         <img src="img/Body-Mist-Banners-1.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="slide">
                         <img src="img/Attire_2_benner.png" alt="">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="slide">
                         <img src="img/Motiwala-Premium-Attar.png" alt="">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="slide">
                         <img src="img/slide1.png" alt="">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="slide">
                         <img src="img/8.png" alt="">
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+
+            </div>
+
+            <div class="controls">
+                <div class="arrow-prev">&#10094;</div>
+                <div class="pagination"></div>
+                <div class="arrow-next">&#10095;</div>
+            </div>
+
+            <div class="product-section">
+                <div class="collation-title">
+                    <h2>Best Premium Attar</h2>
+                </div>
             </div>
         </div>
     </main>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
