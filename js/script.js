@@ -3,18 +3,9 @@ const arrows_next = document.querySelector(".arrow-next");
 const slides = document.querySelector(".slides");
 const slide = document.querySelectorAll(".slide");
 const pagination = document.querySelector(".pagination");
+
 let SlideNumber = 0;
 
-function updateSlider() {
-  slides.style.transform = `translateX(-${curranimation * 100}%)`;
-
-  // dots update કરો
-  const dots = document.querySelectorAll(".dot");
-  dots.forEach((dot, i) => {
-    if (i === curranimation) dot.classList.add("active");
-    else dot.classList.remove("active");
-  });
-}
 
 arrows_next.addEventListener("click", () => {
   SlideNumber++;
@@ -22,7 +13,7 @@ arrows_next.addEventListener("click", () => {
     SlideNumber = 0;
   }
   slides.style.transform = `translateX(-${SlideNumber * 100}%)`;
-  upadates();
+ updatePagination()
 });
 
 arrows_prev.addEventListener("click", () => {
@@ -31,7 +22,7 @@ arrows_prev.addEventListener("click", () => {
     SlideNumber = slide.length - 1;
   }
   slides.style.transform = `translateX(-${SlideNumber * 100}%)`;
-  upadates();
+ updatePagination()
 });
 
 slide.forEach((s, index) => {
@@ -46,3 +37,8 @@ slide.forEach((s, index) => {
 
   return dotDiv;
 });
+
+function updatePagination() {
+  const dots = document.querySelectorAll(".dot");
+  console.log(dots)
+}
