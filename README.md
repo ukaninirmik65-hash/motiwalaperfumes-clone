@@ -15,3 +15,11 @@ A fully responsive clone of the **Motiwala Perfumes** website made using HTML, C
 - JavaScript (Vanilla JS)
 
 ## 📂 Folder Structure
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│ ├── images/
+│ └── icons/
+└── README.md
