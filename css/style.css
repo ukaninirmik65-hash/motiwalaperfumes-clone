@@ -300,6 +300,7 @@ svg.modal__toggle-open.icon-search.icon {
   align-items: center;
   justify-content: center;
 }
+
 .dot {
   width: 10px;
   height: 10px;
@@ -307,13 +308,17 @@ svg.modal__toggle-open.icon-search.icon {
   border: 0.1rem solid rgba(var(--color-foreground), 0.5);
   padding: 4.7px;
   display: block;
+  cursor: pointer;
 }
+
 .dot.active {
   background-color: var(--gradient-background);
 }
+
 .dot-padding {
   padding: 1rem;
 }
+
 /* ==================================================
                    product-section
    ================================================== */
