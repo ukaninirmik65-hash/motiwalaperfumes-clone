@@ -18,7 +18,5 @@ A fully responsive clone of the **Motiwala Perfumes** website made using HTML, C
 <br>├── index.html
 <br>├── style.css
 <br>├── script.js
-<br>├── assets/
-<br>│ ├── images/
-<br>│ └── icons/
+<br>├── images/
 <br>└── README.md
